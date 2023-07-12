@@ -25,8 +25,7 @@
         }
     });
     
-    
-    // Back to top button
+// Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 300) {
             $('.back-to-top').fadeIn('slow');
@@ -53,4 +52,19 @@
 
     
 })(jQuery);
-
+function changeToDarkMode(settings) {
+    const element = document.body;
+    element.classList.toggle("dark-mode");
+    if (settings && settings.smooth_transition) {
+        element.classList.toggle("smooth-transition");
+    }
+}
+function toggleDarkMode(checkbox) {
+    if (checkbox.checked) {
+      // Enable dark mode
+      document.body.classList.add('dark-mode');
+    } else {
+      // Disable dark mode
+      document.body.classList.remove('dark-mode');
+    }
+  }
