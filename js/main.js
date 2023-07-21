@@ -68,3 +68,34 @@ function toggleDarkMode(checkbox) {
       document.body.classList.remove('dark-mode');
     }
   }
+  // Function to toggle dark mode and save user preference
+function toggleDarkMode() {
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    const isDarkMode = darkModeToggle.checked;
+    
+    // Save the user's preference in Local Storage
+    localStorage.setItem('darkMode', isDarkMode);
+    
+    // Call a function to apply the dark mode styles
+    applyDarkModeStyles(isDarkMode);
+  }
+  
+  // Function to apply dark mode styles based on the user's preference
+  function applyDarkModeStyles(isDarkMode) {
+    // Add or remove the dark mode styles based on the user's preference
+    if (isDarkMode) {
+      // Apply dark mode styles
+      document.body.classList.add('dark-mode');
+    } else {
+      // Remove dark mode styles
+      document.body.classList.remove('dark-mode');
+    }
+  }
+  
+  // Check if the user's preference for dark mode is stored in Local Storage
+  const isDarkModeStored = localStorage.getItem('darkMode');
+  if (isDarkModeStored !== null) {
+    // Apply dark mode styles based on the user's stored preference
+    applyDarkModeStyles(isDarkModeStored === 'true');
+  }
+  
