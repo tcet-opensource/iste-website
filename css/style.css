@@ -73,6 +73,9 @@
     margin-left: 8px;
 }
 
+.dark-toggle-text{
+  padding-left: 50px;
+}
 .navbar .navbar-nav .nav-link {
     margin-right: 30px;
     padding: 40px 0;
@@ -100,7 +103,7 @@
         margin-right: 0;
         padding: 10px 0;
     }
-
+    
     .navbar .navbar-nav {
         margin-top: 8px;
         border-top: 1px solid var(--light);
@@ -194,7 +197,6 @@
     opacity: 1;
 }
 
-
 /*** Team ***/
 .team-item .team-img::before,
 .team-item .team-img::after {
@@ -255,6 +257,9 @@
     max-width: 700px;
     margin: 0 auto;
 }
+h1.text-uppercase{
+    color: #eb1616;
+}
 
 .testimonial-carousel .owl-dots {
     margin-top: 35px;
@@ -286,6 +291,9 @@
 .testimonial-carousel .owl-dots .owl-dot.active img {
     opacity: 1;
 }
+.constant-white-text{
+    color: #fff;
+}
 
 
 /*** Footer ***/
@@ -307,6 +315,9 @@
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     margin-right: 10px;
+}
+label{
+    color: white;
 }
 
 .footer .btn.btn-link:hover {
@@ -331,13 +342,13 @@
 #sakshi{
     width: 100%;
     height: 200px;
-
+    
 }
 
 #singh{
     width: 100%;
     height: 200px;
-
+    
 }
 
 #aayushi{
@@ -408,21 +419,21 @@
 }
 
 .image-container {
-   width: 100%;
-   height: auto;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 @media screen and (prefers-color-scheme: light) {
     body {
         background-color: rgb(197, 185, 214);
         color: #000000;
-   }
+    }
     .dark-mode {
         background-color: #000000;
         color: white;
-   }
+    }
 }
 .smooth-transition {
     transition: background-color 300ms;
