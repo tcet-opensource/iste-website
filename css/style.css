@@ -1,456 +1,442 @@
 /********** Template CSS **********/
 :root {
-    --primary: #eb1688;
-    --secondary: #191C24;
-    --light: #e4e9c2;
-    --dark: #1b6f61;
+  --primary: #eb1688;
+  --secondary: #191c24;
+  --light: #e4e9c2;
+  --dark: #1b6f61;
 }
 
 .back-to-top {
-    position: fixed;
-    display: none;
-    right: 45px;
-    bottom: 45px;
-    z-index: 99;
+  position: fixed;
+  display: none;
+  right: 45px;
+  bottom: 45px;
+  z-index: 99;
 }
-
 
 /*** Spinner ***/
 #spinner {
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity .5s ease-out, visibility 0s linear .5s;
-    z-index: 99999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-out, visibility 0s linear 0.5s;
+  z-index: 99999;
 }
 
 #spinner.show {
-    transition: opacity .5s ease-out, visibility 0s linear 0s;
-    visibility: visible;
-    opacity: 1;
+  transition: opacity 0.5s ease-out, visibility 0s linear 0s;
+  visibility: visible;
+  opacity: 1;
 }
-
 
 /*** Button ***/
 .btn {
-    font-weight: 500;
-    transition: .5s;
+  font-weight: 500;
+  transition: 0.5s;
 }
 
 .btn-square {
-    width: 38px;
-    height: 38px;
+  width: 38px;
+  height: 38px;
 }
 
 .btn-sm-square {
-    width: 32px;
-    height: 32px;
+  width: 32px;
+  height: 32px;
 }
 
 .btn-lg-square {
-    width: 48px;
-    height: 48px;
+  width: 48px;
+  height: 48px;
 }
 
 .btn-square,
 .btn-sm-square,
 .btn-lg-square {
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: normal;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
 }
-
-
 
 /*** Navbar ***/
 .navbar .dropdown-toggle::after {
-    border: none;
-    content: "\f107";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    vertical-align: middle;
-    margin-left: 8px;
+  border: none;
+  content: "\f107";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  vertical-align: middle;
+  margin-left: 8px;
 }
 
 .navbar .navbar-nav .nav-link {
-    margin-right: 30px;
-    padding: 40px 0;
-    color: var(--light);
-    font-family: 'Oswald', sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-    text-transform: uppercase;
-    outline: none;
+  margin-right: 30px;
+  padding: 40px 0;
+  color: var(--light);
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  outline: none;
 }
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-    color: var(--primary);
+  color: var(--primary);
 }
 
 .navbar.sticky-top {
-    top: -100px;
-    transition: .5s;
+  top: -100px;
+  transition: 0.5s;
 }
 
 @media (max-width: 991.98px) {
-    .navbar .navbar-nav .nav-link,
-    .navbar.shadow-sm .navbar-nav .nav-link {
-        margin-right: 0;
-        padding: 10px 0;
-    }
+  .navbar .navbar-nav .nav-link,
+  .navbar.shadow-sm .navbar-nav .nav-link {
+    margin-right: 0;
+    padding: 10px 0;
+  }
 
-    .navbar .navbar-nav {
-        margin-top: 8px;
-        border-top: 1px solid var(--light);
-    }
+  .navbar .navbar-nav {
+    margin-top: 8px;
+    border-top: 1px solid var(--light);
+  }
 }
 
 @media (min-width: 992px) {
-    .navbar.shadow-sm .navbar-nav .nav-link {
-        padding: 20px 0;
-    }
+  .navbar.shadow-sm .navbar-nav .nav-link {
+    padding: 20px 0;
+  }
 
-    .navbar .nav-item .dropdown-menu {
-        display: block;
-        border: none;
-        margin-top: 0;
-        top: 150%;
-        opacity: 0;
-        visibility: hidden;
-        transition: .5s;
-    }
+  .navbar .nav-item .dropdown-menu {
+    display: block;
+    border: none;
+    margin-top: 0;
+    top: 150%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+  }
 
-    .navbar .nav-item:hover .dropdown-menu {
-        top: 100%;
-        visibility: visible;
-        transition: .5s;
-        opacity: 1;
-    }
+  .navbar .nav-item:hover .dropdown-menu {
+    top: 100%;
+    visibility: visible;
+    transition: 0.5s;
+    opacity: 1;
+  }
 }
-
 
 /*** Header ***/
 .carousel-caption {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, .85);
-    z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 1;
 }
 
 .carousel-control-prev,
 .carousel-control-next {
-    width: 10%;
+  width: 10%;
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    width: 3rem;
-    height: 3rem;
+  width: 3rem;
+  height: 3rem;
 }
 
 @media (max-width: 768px) {
-    #header-carousel .carousel-item {
-        position: relative;
-        min-height: 450px;
-    }
-    
-    #header-carousel .carousel-item img {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+  #header-carousel .carousel-item {
+    position: relative;
+    min-height: 450px;
+  }
+
+  #header-carousel .carousel-item img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 .page-header {
-    background: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url(../img/carousel-1.jpg) center center no-repeat;
-    background-size: cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+    url(../img/carousel-1.jpg) center center no-repeat;
+  background-size: cover;
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
-    color: var(--light);
+  color: var(--light);
 }
-
 
 /*** Service ***/
 .service-item .btn {
-    position: absolute;
-    right: -50px;
-    bottom: -50px;
-    width: 50px;
-    height: 50px;
-    color: var(--primary);
-    background: var(--dark);
-    opacity: 0;
+  position: absolute;
+  right: -50px;
+  bottom: -50px;
+  width: 50px;
+  height: 50px;
+  color: var(--primary);
+  background: var(--dark);
+  opacity: 0;
 }
 
 .service-item:hover .btn {
-    right: 0;
-    bottom: 0;
-    opacity: 1;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
 }
-
 
 /*** Team ***/
 .team-item .team-img::before,
 .team-item .team-img::after {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 100%;
-    border: 5px solid rgb(0, 0, 133);
-    top: 0;
-    left: 0;
-    background: rgba(192, 6, 111, 0.85);
-    transition: .5s;
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  border: 5px solid rgb(0, 0, 133);
+  top: 0;
+  left: 0;
+  background: rgba(192, 6, 111, 0.85);
+  transition: 0.5s;
 }
 .team-item .team-img::after {
-    left: auto;
-    right: 0;
+  left: auto;
+  right: 0;
 }
 
 .team-item:hover .team-img::before,
 .team-item:hover .team-img::after {
-    width: 25%;
+  width: 25%;
 }
 
 .team-item .team-img .team-social {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: .5s;
-    z-index: 3;
-    opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  z-index: 3;
+  opacity: 0;
 }
 
 .team-item:hover .team-img .team-social {
-    transition-delay: .3s;
-    opacity: 1;
+  transition-delay: 0.3s;
+  opacity: 1;
 }
 
 .team-item .team-social .btn {
-    display: inline-flex;
-    margin: 0 3px;
-    color: var(--primary);
-    background: var(--dark);
+  display: inline-flex;
+  margin: 0 3px;
+  color: var(--primary);
+  background: var(--dark);
 }
 
 .team-item .team-social .btn:hover {
-    color: #eb7c7c;
-    background: var(--primary);
+  color: #eb7c7c;
+  background: var(--primary);
 }
-
 
 /*** Testimonial ***/
 .testimonial-carousel {
-    max-width: 700px;
-    margin: 0 auto;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .testimonial-carousel .owl-dots {
-    margin-top: 35px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  margin-top: 35px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .testimonial-carousel .owl-dots .owl-dot {
-    width: 60px;
-    height: 60px;
-    margin: 0 5px;
-    padding: 10px;
-    background: var(--secondary);
-    transition: .5s;
+  width: 60px;
+  height: 60px;
+  margin: 0 5px;
+  padding: 10px;
+  background: var(--secondary);
+  transition: 0.5s;
 }
 
 .testimonial-carousel .owl-dots .owl-dot.active {
-    width: 150px;
-    height: 110px;
+  width: 150px;
+  height: 110px;
 }
 
 .testimonial-carousel .owl-dots .owl-dot img {
-    opacity: .1;
-    transition: .5s;
+  opacity: 0.1;
+  transition: 0.5s;
 }
 
 .testimonial-carousel .owl-dots .owl-dot.active img {
-    opacity: 1;
+  opacity: 1;
 }
-
 
 /*** Footer ***/
 .footer .btn.btn-link {
-    display: block;
-    margin-bottom: 5px;
-    padding: 0;
-    text-align: left;
-    color: var(--light);
-    font-size: 15px;
-    font-weight: normal;
-    text-transform: capitalize;
-    transition: .3s;
+  display: block;
+  margin-bottom: 5px;
+  padding: 0;
+  text-align: left;
+  color: var(--light);
+  font-size: 15px;
+  font-weight: normal;
+  text-transform: capitalize;
+  transition: 0.3s;
 }
 
 .footer .btn.btn-link::before {
-    position: relative;
-    content: "\f105";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    margin-right: 10px;
+  position: relative;
+  content: "\f105";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 10px;
 }
 
 .footer .btn.btn-link:hover {
-    color: var(--primary);
-    letter-spacing: 1px;
-    box-shadow: none;
+  color: var(--primary);
+  letter-spacing: 1px;
+  box-shadow: none;
 }
 
 .footer .copyright {
-    padding: 1.5rem;
-    font-size: 15px;
-    background: var(--dark);
+  padding: 1.5rem;
+  font-size: 15px;
+  background: var(--dark);
 }
 
 .footer .copyright a {
-    color: var(--light);
+  color: var(--light);
 }
 
 .footer .copyright a:hover {
-    color: var(--primary);
+  color: var(--primary);
 }
-#sakshi{
-    width: 100%;
-    height: 200px;
-
-}
-
-#singh{
-    width: 100%;
-    height: 200px;
-
+#sakshi {
+  width: 100%;
+  height: 200px;
 }
 
-#aayushi{
-    width: 100%;
-    height: 200px;
+#singh {
+  width: 100%;
+  height: 200px;
 }
 
-#dubey{
-    width: 100%;
-    height: 200px;
+#aayushi {
+  width: 100%;
+  height: 200px;
 }
 
-#kiransir{
-    width: 100%;
-    height: 275px;
+#dubey {
+  width: 100%;
+  height: 200px;
 }
 
-#rohitsir{
-    width: 100%;
-    height: 275px;
+#kiransir {
+  width: 100%;
+  height: 275px;
 }
-#neha{
-    width:100%;
-    height:275px;
-} 
-#core{
-    width: 100%;
-    height: 200px;
+
+#rohitsir {
+  width: 100%;
+  height: 275px;
 }
-#anurag{
-    width: 100%;
-    height: 200px;
+#neha {
+  width: 100%;
+  height: 275px;
 }
-.height{
-    height: 485px;
+#core {
+  width: 100%;
+  height: 200px;
 }
-#zephyr{
-    width: 100%;
-    height: 275px;
+#anurag {
+  width: 100%;
+  height: 200px;
 }
-#fiesta{
-    width: 100%;
-    height: 275px;
+.height {
+  height: 485px;
 }
-#stem{
-    width: 100%;
-    height: 275px;
+#zephyr {
+  width: 100%;
+  height: 275px;
 }
-#workshopc{
-    width: 100%;
-    height: 275px;
+#fiesta {
+  width: 100%;
+  height: 275px;
 }
-#resume{
-    width: 100%;
-    height: 275px;
+#stem {
+  width: 100%;
+  height: 275px;
 }
-#multicon{
-    width: 100%;
-    height: 275px;
+#workshopc {
+  width: 100%;
+  height: 275px;
 }
-#talent{
-    width: 100%;
-    height: 275px;
+#resume {
+  width: 100%;
+  height: 275px;
 }
-#tour{
-    width: 100%;
-    height: 275px;
+#multicon {
+  width: 100%;
+  height: 275px;
+}
+#talent {
+  width: 100%;
+  height: 275px;
+}
+#tour {
+  width: 100%;
+  height: 275px;
 }
 
 .image-container {
-   width: 100%;
-   height: auto;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media screen and (prefers-color-scheme: light) {
-    body {
-        background-color: rgb(197, 185, 214);
-        color: #000000;
-   }
-    .dark-mode {
-        background-color: #000000;
-        color: white;
-   }
+  body {
+    background-color: rgb(197, 185, 214);
+    color: #000000;
+  }
+  .dark-mode {
+    background-color: #000000;
+    color: white;
+  }
 }
 .smooth-transition {
-    transition: background-color 300ms;
+  transition: background-color 300ms;
 }
 @media screen and (prefers-color-scheme: dark) {
-    body {
-        background-color: rgb(255, 255, 255);
-        color: #040316;
-   }
-    .dark-mode {
-        background-color: white;
-        color: #0d1117;
-   }
+  body {
+    background-color: rgb(255, 255, 255);
+    color: #040316;
+  }
+  .dark-mode {
+    background-color: white;
+    color: #0d1117;
+  }
 }
-#pratik
-{
-    width: 100%;
-    height: 200px;  
+#pratik {
+  width: 100%;
+  height: 200px;
 }
-#mukund
-{
-    width: 100%;
-    height: 200px;  
+#mukund {
+  width: 100%;
+  height: 200px;
 }
 .dark-mode {
-    background-color: #000000;
-    color: #fff;
-    /* Add other styling for dark mode */
-  }
-  
-  
+  background-color: #000000;
+  color: #fff;
+  /* Add other styling for dark mode */
+}
