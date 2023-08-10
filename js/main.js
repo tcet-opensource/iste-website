@@ -38,6 +38,20 @@
         return false;
     });
 
+//NavBar Active Link
+$(document).ready(function(){
+    $('a').on('click',function(){
+        $(this).siblings().removeClass('active');
+        $(this).addClass('active');
+    })
+})
+// const activePage = window.location.href;
+// const navLinks = document.querySelectorAll('nav a').forEach(link => {
+//   if(link.href.includes(`${activePage}`)){
+//     link.classList.add('active');
+//   }
+// })
+
 
     // Testimonials carousel
     $('.testimonial-carousel').owlCarousel({
@@ -98,4 +112,3 @@ function toggleDarkMode() {
     // Apply dark mode styles based on the user's stored preference
     applyDarkModeStyles(isDarkModeStored === 'true');
   }
-  
