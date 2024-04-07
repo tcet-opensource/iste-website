@@ -320,27 +320,59 @@
 .footer .copyright a:hover {
   color: var(--primary);
 }
-#sakshi {
+
+
+#Priyanshu {
+  width: 100%;
+  height: auto;
+}
+#tisha {
+  width: 100%;
+  height: 200px;
+}
+#savi {
+  width: 100%;
+  height: auto;
+}
+#yug {
+  width: 100%;
+  height: 200px;
+}
+#ayan {
+  width: 100%;
+  height: 200px;
+}
+#aadil {
+  width: 100%;
+  height: 200px;
+}
+#rajveer {
+  width: 100%;
+  height: 200px;
+}
+#aman {
+  width: 100%;
+  height: 200px;
+}
+#piyush {
+  width: 100%;
+  height: auto;
+}
+#harsh {
+  width: 100%;
+  height: 200px;
+}
+#arya {
+  width: 100%;
+  height: 200px;
+}
+#krishna {
   width: 100%;
   height: 200px;
 }
 
-#singh {
-  width: 100%;
-  height: 200px;
-}
 
-#aayushi {
-  width: 100%;
-  height: 200px;
-}
-
-#dubey {
-  width: 100%;
-  height: 200px;
-}
-
-#kiransir {
+#neha {
   width: 100%;
   height: 275px;
 }
@@ -349,7 +381,7 @@
   width: 100%;
   height: 275px;
 }
-#neha {
+#vishal {
   width: 100%;
   height: 275px;
 }
@@ -357,10 +389,8 @@
   width: 100%;
   height: 200px;
 }
-#anurag {
-  width: 100%;
-  height: 200px;
-}
+
+
 .height {
   height: 485px;
 }
@@ -426,14 +456,6 @@
     background-color: white;
     color: #0d1117;
   }
-}
-#pratik {
-  width: 100%;
-  height: 200px;
-}
-#mukund {
-  width: 100%;
-  height: 200px;
 }
 .dark-mode {
   background-color: #000000;
