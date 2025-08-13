@@ -1,0 +1,54 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f2f5;
+    color: #1a202c;
+}
+.nav-link {
+    position: relative;
+    transition: color 0.3s;
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 50%;
+    background-color: #2563eb;
+    transition: width 0.3s, left 0.3s;
+}
+.nav-link:hover, .nav-link.active {
+    color: #2563eb;
+}
+.nav-link:hover::after, .nav-link.active::after {
+    width: 100%;
+    left: 0;
+}
+.card-3d {
+    transition: transform 0.4s, box-shadow 0.4s;
+    transform-style: preserve-3d;
+}
+.card-3d:hover {
+    transform: translateY(-10px) rotateX(5deg) scale(1.03);
+    box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.2);
+}
+.page {
+    display: none;
+}
+.page.active {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+#bg-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
